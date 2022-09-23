@@ -81,7 +81,7 @@ section .title::after{
   }
 
 .radio_img {
-    border: 10px solid rgb(100, 99, 99);
+    border: 10px solid rgb(99, 100, 100);
     display: block;
     margin: 1em auto;
 }

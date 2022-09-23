@@ -15,7 +15,7 @@ let isLoaded = false;
 
 var color = d3.scaleSqrt()
     .domain([2, 20])
-    .range(d3.schemeReds[9]);
+    .range(d3.schemePuBuGn[9]);
 
 function getColor(scheme) {
     return d3.scaleLinear()
@@ -513,7 +513,7 @@ function clicked(d) {
                     return 'url(#gradient'+i+')';
                 }
             })
-            .attr('stroke', 'darkred')
+            .attr('stroke', 'black')
             .on('click', function (d) {
                 d3.event.stopPropagation();
                 bubbleClicked(d, stateName);
@@ -718,7 +718,7 @@ function reset() {
     g.transition()
         .delay(100)
         .duration(750)
-        .style("stroke-width", "1.5px")
+        .style("stroke-width", "10px")
         .attr('transform', 'translate('+margin.left+','+margin.top+')');
 
     svg.selectAll('.us-state')

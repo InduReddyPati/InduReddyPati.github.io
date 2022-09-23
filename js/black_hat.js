@@ -11,7 +11,7 @@ function display(){
             if (typeof(text_2) != 'undefined' && text_2 != null){
                 text_2.remove();
             }
-            document.getElementById("img_txt_c").innerHTML = '<h3 id="h1_img_txt_c" class="font_0">"EAST COAST" voilent "KILLERS"!! "MID US" and "WEST COAST" more "SAFE"!!!</h3>';
+            document.getElementById("img_txt_c").innerHTML = '<h3 id="h1_img_txt_c" class="font_0">"EAST COAST" voilent "KILLERS"; "MASS MURDERS"!! "MID US" and "WEST COAST" more "SAFE"!!!</h3>';
             break;
         case "MaleFemale":
             document.getElementById("radio_img_div").innerHTML = "<img src='images/MaleFemale.png' style='width:1000px;height:600px;' class='radio_img'>"; 
@@ -40,7 +40,7 @@ function display(){
             if (typeof(text_3) != 'undefined' && text_3 != null){
                 text_3.remove();
             }
-            document.getElementById("img_txt_c").innerHTML = '<h3 id="h1_img_txt_c" class="font_0">"TEXAS" and "CALIFORNIA" "MURDEROUS" US States!! "FLORIDA" no "LESS"!!</h3>';
+            document.getElementById("img_txt_c").innerHTML = '<h3 id="h1_img_txt_c" class="font_0">States with "HIGH TEMPERATURES" More "MURDEROUS"!! "TEXAS", "CALIFORNIA" & "FLORIDA"</h3>';
             break;
     }
   }
