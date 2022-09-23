@@ -80,6 +80,12 @@ section .title::after{
     margin: 1em auto;
   }
 
+.radio_img {
+    border: 10px solid rgb(100, 99, 99);
+    display: block;
+    margin: 1em auto;
+}
+
 .svg_p {
     color: rgb(110, 108, 108);
     text-align: center;

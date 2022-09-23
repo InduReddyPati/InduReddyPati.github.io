@@ -1,6 +1,3 @@
-
-console.log("hiii", d3.select('.viz').style('width'))
-
 var margin = {
     top: 10,
     bottom: 10,

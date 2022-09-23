@@ -34,19 +34,13 @@ function update(selectedVar, file_path) {
             colors=null,
             tooltip=null,
             myChart=null;
-
-    console.log("before data")
     
     d3.json(file_path).then(function(d) {
       
         for (var i = 0; i<d.length; i++) {
-            console.log("lenght:", d.length)
             counts.push(d[i][selectedVar]);
             states.push( d[i].name );
         }
-
-        console.log("counts lenght:", counts.length)
-        console.log("states lenght:", states)
       
         yScale = d3.scaleLinear()
           .domain([0, d3.max(counts)])
