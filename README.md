@@ -1,1 +1,0 @@
-# InduReddyPati.github.io
