@@ -1,38 +1,26 @@
 'use strict'
 import * as THREE from '../../vendor/three/build/three.module.js'
 
-
 var App = App || {}
 
 const ParticleSystem = function () {
     const self = this
-
     const data = []
-
     const sceneObject = new THREE.Group()
-
     const bounds = {}
-
     const margin = { top: 10, right: 30, bottom: 30, left: 60 },
         width = 460 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom
-
     const particleColors = d3
-        // .scaleSequential(d3.interpolateRgb("purple", "orange"))
         .scaleSequential(d3.interpolateYlOrRd)
-        //.domain(d3.extent(data.map(d => d.concentration)));
         .domain([0, 30].reverse())
-
     let plane
     let particles
     let particleSystem
-
     let xExtent
     let yExtent
-
     let xAxis
     let yAxis
-
     let svg
 
     self.drawContainment = function () {
@@ -173,11 +161,13 @@ const ParticleSystem = function () {
                     particleColors(data[i].concentration)
                 )
             else
-                particleSystem.geometry.colors[i].set(
-                    d3.scaleSequential(d3.interpolateGreys).domain([0, 30])(
-                        data[i].concentration
+            {
+                    particleSystem.geometry.colors[i].set(
+                        d3.scaleSequential(d3.interpolateGreys).domain([0, 30])(
+                            data[i].concentration
+                        )
                     )
-                )
+            }
         }
     }
 
